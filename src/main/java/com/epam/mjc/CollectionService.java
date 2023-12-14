@@ -23,6 +23,6 @@ public class CollectionService {
     }
 
     public Integer sum(List<Integer> list) {
-        return list.stream().reduce(0, (subtotal, element) -> subtotal + element);
+        return list.stream().reduce(0, Integer::sum);
     }
 }
