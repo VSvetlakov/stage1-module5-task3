@@ -11,7 +11,7 @@ public class CollectionService {
     }
 
     public List<String> toUpperCaseCollection(List<String> list) {
-        return list.stream().map(x -> x.toUpperCase()).collect(Collectors.toList());
+        return list.stream().map(String::toUpperCase).collect(Collectors.toList());
     }
 
     public Optional<Integer> findMax(List<Integer> list) {
